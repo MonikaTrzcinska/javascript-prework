@@ -1,7 +1,7 @@
 {
-    function playGame(playerInput) {
+    const playGame = function (playerInput) {
     clearMessages();
-    function getMoveName(argMoveId) {
+    const getMoveName = function (argMoveId) {
         if (argMoveId == 1) {
             return 'kamień';
         } else if (argMoveId == 2) {
@@ -14,7 +14,7 @@
         }
     }
 
-    function displayResults(argComputerMove, argPlayerMove) {
+    const displayResults = function (argComputerMove, argPlayerMove) {
         console.log('moves:', argComputerMove, argPlayerMove);
         if (argPlayerMove == 'nieznany ruch') {
             printMessage('Gra niemożliwa, Twój ruch jest nieznany.');
